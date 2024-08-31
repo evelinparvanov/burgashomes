@@ -1,0 +1,28 @@
+/* ImageContainer.css */
+.image-container {
+    width: 100%;
+    position: relative; /* Required for absolute positioning of text */
+    display: inline-block; /* Ensure it wraps tightly around the image */
+  }
+  
+  .image {
+    display: block; /* Remove bottom space caused by inline-block */
+    width: 100%; /* Make image responsive, adjust as needed */
+    height: 40vh; /* Maintain aspect ratio */
+    object-fit: cover;
+    filter: blur(3px);
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    color: white; /* Adjust color as needed */
+    font-size: 4rem; /* Adjust size as needed */
+    background-color: rgba(0, 0, 0, 0.8); /* Optional: semi-transparent background */
+    padding: 10px; /* Optional: padding for readability */
+    text-align: center;
+    border-radius: 5px; /* Optional: rounded corners */
+  }
+  

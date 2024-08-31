@@ -1,0 +1,52 @@
+/* Styling the entire section */
+.info-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+
+  .info-section__title {
+    margin-bottom: 30px;
+  }
+  
+  /* Flexbox layout for the cards */
+  .info-section__cards {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+  }
+  
+  /* Individual card styling */
+  .info-card {
+    flex: 1;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 500px;
+    min-height: 600px;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Card image styling */
+  .info-card__image {
+    width: 100%;
+  }
+  
+  /* Card title styling */
+  .info-card__title {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #111;
+  }
+  
+  /* Card description styling */
+  .info-card__description {
+    font-size: 1.7rem;
+    color: #666;
+    padding: 0 15px 15px 15px;
+  }
+  
