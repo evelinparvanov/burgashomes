@@ -1,3 +1,5 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Footer.css";
 
 const Footer = () => {
@@ -5,12 +7,12 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section about">
-          <a href="/" className="logo">
+          <Link to="/" className="logo">
             <img
               src="/burgas_homes_logo_noBG_SVG.svg"
               alt="Burgas Homes logo"
             />
-          </a>
+          </Link>
           <p className="footer-text">
             Ние предлагаме висококачествени сглобяеми къщи, които съчетават
             комфорт и устойчивост.
@@ -19,16 +21,16 @@ const Footer = () => {
             <a href="mailto:office@burgasstroi.com">
               <i className="fas fa-envelope"></i>
             </a>
-            <a href="tel:+359 898 555 246">
+            <a href="tel:+359898555246">
               <i className="fas fa-phone"></i>
             </a>
-            <a href="">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-facebook-f"></i>
             </a>
-            <a href="">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="">
+            <a href="https://wa.me/+359898555246" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -38,19 +40,19 @@ const Footer = () => {
           <h2>Нашите Услуги</h2>
           <ul>
             <li>
-              <a href="#">Проектиране на сглобяеми къщи</a>
+              <Link to="/services/service1">Проектиране</Link>
             </li>
             <li>
-              <a href="#">Производство на сглобяеми къщи</a>
+              <Link to="/services/service2">Фундамент</Link>
             </li>
             <li>
-              <a href="#">Монтаж на сглобяеми къщи</a>
+              <Link to="/services/service3">Груб строеж</Link>
             </li>
             <li>
-              <a href="#">Интериорен дизайн</a>
+              <Link to="/services/service4">Покриви</Link>
             </li>
             <li>
-              <a href="#">Консултации и поддръжка</a>
+              <Link to="/services/service5">Довършителни дейности</Link>
             </li>
           </ul>
         </div>
@@ -59,16 +61,22 @@ const Footer = () => {
           <h2>Навигация</h2>
           <ul>
             <li>
-              <a href="/">Начало</a>
+              <Link to="/">Начало</Link>
             </li>
             <li>
-              <a href="/prefab-houses">Сглобяеми къщи</a>
+              <Link to="/prefab-houses">Дървени сглобяеми къщи</Link>
             </li>
             <li>
-              <a href="/about">За нас</a>
+              <Link to="/technology">Технология</Link>
             </li>
             <li>
-              <a href="/contact">Контакти</a>
+              <Link to="/prices">Цени</Link>
+            </li>
+            <li>
+              <Link to="/about">За нас</Link>
+            </li>
+            <li>
+              <Link to="/contact">Контакти</Link>
             </li>
           </ul>
         </div>
@@ -82,34 +90,34 @@ const Footer = () => {
             </p>
             <p>
               <i className="fas fa-phone"></i>
-              <a href="tel:+359 898 555 246">+359 898 555 246</a>
+              <a href="tel:+359898555246">+359 898 555 246</a>
             </p>
             <p>
-              <i className="fab fa-facebook"></i>
-              <a href="">Burgas Homes</a>
+              <i className="fab fa-facebook-f"></i>
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Burgas Homes</a>
             </p>
             <p>
               <i className="fab fa-instagram"></i>
-              <a href="">Burgas Homes</a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Burgas Homes</a>
             </p>
             <p>
               <i className="fab fa-whatsapp"></i>
-              <a href="">Burgas Homes</a>
+              <a href="https://wa.me/+359898555246" target="_blank" rel="noopener noreferrer">Burgas Homes</a>
             </p>
           </div>
         </div>
       </div>
-      <hr></hr>
+      <hr />
       <div className="footer-bottom">
-        <a href="/">
+        <Link to="/">
           &copy; {new Date().getFullYear()} Сглобяеми къщи Burgas Homes. Всички
           права запазени.
-        </a>
+        </Link>
         <div className="footer-links">
-          <a href="/general-conditions">Общи условия в сайта</a>
+          <Link to="/general-conditions">Общи условия в сайта</Link>
         </div>
         <div className="footer-links">
-          <a href="/privacy-policy">Политика за лични данни</a>
+          <Link to="/privacy-policy">Политика за лични данни</Link>
         </div>
         <div className="footer-links">
           <a href="tel:+359877226994">

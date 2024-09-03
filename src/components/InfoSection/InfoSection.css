@@ -1,5 +1,10 @@
 /* Styling the entire section */
 .info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     padding: 50px;
     background-color: #fff;
     text-align: center;
@@ -11,6 +16,7 @@
   
   /* Flexbox layout for the cards */
   .info-section__cards {
+    width: 90%;
     display: flex;
     justify-content: center;
     gap: 70px;
@@ -23,8 +29,8 @@
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    max-width: 500px;
-    min-height: 600px;
+    max-width: 400px;
+    min-height: 500px;
   }
   
   .info-card:hover {
@@ -38,14 +44,14 @@
   
   /* Card title styling */
   .info-card__title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 15px 0;
     color: #111;
   }
   
   /* Card description styling */
   .info-card__description {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     color: #666;
     padding: 0 15px 15px 15px;
   }

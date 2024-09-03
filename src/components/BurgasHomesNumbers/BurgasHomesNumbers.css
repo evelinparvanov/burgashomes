@@ -1,0 +1,39 @@
+.burgas-homes-numbers {
+    background: #fff;
+    padding: 40px 20px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .burgas-homes-numbers h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .numbers-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .number-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 20%;
+    margin: 10px;
+  }
+  
+  .number-item h3 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .number-item p {
+    font-size: 1.2em;
+    color: #555;
+  }
+  

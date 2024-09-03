@@ -1,0 +1,160 @@
+/* General Styles for the About Us Page */
+.about-us-page {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.about-us-content {
+    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.about-us-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.2em;
+    text-align: center;
+    font-weight: 500;
+}
+
+.about-us-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em;
+    margin-top: 0;
+    color: #2980b9;
+    font-weight: 400;
+}
+
+/* Styles for Company Overview */
+.company-info {
+    background: #f9f9f9;
+    padding: 60px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 30px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+.company-image, .benefits-image, .why-image {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    background: transparent;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.company-text, .benefits-text, .why-text {
+    flex: 2;
+    font-size: 1em;
+    color: #555;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.about-us-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+
+  .why-choose-us  {
+    margin: 60px auto;
+    background-color: #fff;
+  }
+  
+  .why-choose-us .why-image {
+    width: 40%;
+    border-radius: 5px;
+  }
+  
+  .why-info {
+    width: 55%;
+  }
+  
+  .why-text h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  .why-text p {
+    text-align: left;
+    margin-bottom: 1em;
+    color: #000;
+    line-height: 1.5;
+  }
+  
+  .why-text span {
+    font-weight: bold;
+    color: #000;
+  }
+  
+
+  .about-us-section.benefits {
+    padding: 60px 20px; /* Increased padding for more breathing room */
+    background: #f4f4f4; /* Slightly darker background for better contrast */
+  }
+  
+  .benefits-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    gap: 40px; /* Space between each section */
+  }
+  
+  .benefits-text {
+    max-width: 900px; /* Increased max-width for a better layout */
+  }
+  
+  .benefits-text h2 {
+    margin-bottom: 40px; /* More space below the main heading */
+    font-weight: 700; /* Stronger emphasis on the heading */
+  }
+  
+  .benefit-container {
+    border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners for a softer look */
+  padding: 20px; /* Space inside the border */
+  background: #fff; /* White background for contrast */
+  margin-bottom: 30px; /* Increased space between each benefit */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a lifted effect */
+}
+  
+  .benefit-container h3 {
+    margin-bottom: 15px; /* Added space below each subheading */
+    font-weight: 600; /* Slightly lighter weight for subheadings */
+  }
+  
+  .benefit-container p {
+    margin: 0;
+    line-height: 1.7; /* Increased line height for improved readability */
+    color: #666; /* Subtle color for text to improve contrast */
+  }
+  
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-us-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .company-image, .benefits-image, .why-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}

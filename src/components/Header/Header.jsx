@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import "./Header.css";
 import "../../index.css";
 
@@ -45,10 +45,10 @@ const Header = () => {
           </a>
         </div>
         <div className="social-media">
-          <a href="https://facebook.com">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src="/src/assets/facebook.png" alt="Facebook" />
           </a>
-          <a href="https://instagram.com">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <img src="/src/assets/instagram.png" alt="Instagram" />
           </a>
         </div>
@@ -60,13 +60,13 @@ const Header = () => {
           isWhiteBackgroundPage ? "white-background" : ""
         } ${isScrolled ? "scrolled" : ""}`}
       >
-        <a href="/">
+        <Link to="/">
           <img
             className="logo"
             src="/burgas_homes_logo_noBG_SVG.svg"
             alt="Logo"
           />
-        </a>
+        </Link>
         <div
           className={`menu-toggle ${menuOpen ? "open" : ""}`}
           onClick={toggleMenu}
@@ -77,68 +77,68 @@ const Header = () => {
         </div>
         <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
           <li>
-            <a href="/">НАЧАЛО</a>
+            <Link to="/">НАЧАЛО</Link>
           </li>
           <li className="dropdown">
-            <a href="#" className="dropbtn">
+            <Link to="/prefab-houses" className="dropbtn">
               ДЪРВЕНИ СГЛОБЯЕМИ КЪЩИ
               <span className="dropdown-arrow">▼</span>
-            </a>
+            </Link>
             <ul className="dropdown-content">
               <li>
-                <a href="/wooden-houses/type1">Къщи до 100 м2</a>
+                <Link to="/wooden-houses/type1">Къщи до 100 м2</Link>
               </li>
               <li>
-                <a href="/wooden-houses/type2">Къщи над 100 м2</a>
+                <Link to="/wooden-houses/type2">Къщи над 100 м2</Link>
               </li>
               <li>
-                <a href="/wooden-houses/type3">Етапи на изграждане</a>
+                <Link to="/wooden-houses/type3">Етапи на изграждане</Link>
               </li>
               <li>
-                <a href="/wooden-houses/type3">Проекти</a>
+                <Link to="/wooden-houses/type3">Проекти</Link>
               </li>
               <li>
-                <a href="/wooden-houses/type3">Гаранция</a>
+                <Link to="/wooden-houses/type3">Гаранция</Link>
               </li>
               <li>
-                <a href="/wooden-houses/type3">Документи</a>
+                <Link to="/wooden-houses/type3">Документи</Link>
               </li>
             </ul>
           </li>
           <li className="dropdown">
-            <a href="#" className="dropbtn">
+            <Link to="/services" className="dropbtn">
               УСЛУГИ
               <span className="dropdown-arrow">▼</span>
-            </a>
+            </Link>
             <ul className="dropdown-content">
               <li>
-                <a href="/services/service1">Проектиране</a>
+                <Link to="/services/service1">Проектиране</Link>
               </li>
               <li>
-                <a href="/services/service2">Фундамент</a>
+                <Link to="/services/service2">Фундамент</Link>
               </li>
               <li>
-                <a href="/services/service3">Груб строеж</a>
+                <Link to="/services/service3">Груб строеж</Link>
               </li>
               <li>
-                <a href="/services/service3">Покриви</a>
+                <Link to="/services/service3">Покриви</Link>
               </li>
               <li>
-                <a href="/services/service3">Довършителни дейности</a>
+                <Link to="/services/service3">Довършителни дейности</Link>
               </li>
             </ul>
           </li>
           <li>
-            <a href="/technology">ТЕХНОЛОГИИ</a>
+            <Link to="/technology">ТЕХНОЛОГИЯ</Link>
           </li>
           <li>
-            <a href="/prices">ЦЕНИ</a>
+            <Link to="/prices">ЦЕНИ</Link>
           </li>
           <li>
-            <a href="/about">ЗА НАС</a>
+            <Link to="/about">ЗА НАС</Link>
           </li>
           <li>
-            <a href="/contact">КОНТАКТИ</a>
+            <Link to="/contact">КОНТАКТИ</Link>
           </li>
         </ul>
       </nav>
